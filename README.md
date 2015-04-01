@@ -46,14 +46,14 @@ $ ./compilar.sh
 Autores
 ----
 Este proyecto ha sido desarrollado por:
-- Rafael Leira Osuna ([@ralequi](https://github.com/))
+- Rafael Leira Osuna ([@ralequi](https://github.com/ralequi))
 - Jose Fernando Zazo ([@jfzazo](https://github.com/jfzazo))
 - Mario Daniel Ruiz Noguera
 - Sid ([@JSidrach](https://github.com/JSidrach))
 
 Licencia
 ----
-El código fuente se ha publicado bajo la [licencia MIT](LICENSE). Los [documentos anexos de la convocatoria 2014-2015](2014-2015/) pertenecen a la [Escuela Politécnica Superior](www.eps.uam.es) de la [Universidad Autónoma de Madrid](www.uam.es). Los logos proporcionados en la carpeta [graphics](graphics/) pertenecen también a sendas instituciones
+El código fuente se ha publicado bajo la [licencia MIT](LICENSE). Los [documentos anexos de la convocatoria 2014-2015](2014-2015/) pertenecen a la [Escuela Politécnica Superior](http://www.eps.uam.es) de la [Universidad Autónoma de Madrid](http://www.uam.es). Los logos proporcionados en la carpeta [graphics](graphics/) pertenecen también a sendas instituciones
 
 Contribuir
 ----
