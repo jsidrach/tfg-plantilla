@@ -1,0 +1,123 @@
+% Definiciones y constantes de estilo
+\include{definiciones}
+
+% Definiciones de comandos
+\newcommand{\nombreautor}{TODO: Nombre Apellido1 Apellido2}
+\newcommand{\nombretutor}{TODO: NombreTutor Apellido1 Apellido2}
+\newcommand{\nombretrabajo}{TODO: Título del Trabajo de Fin de Grado}
+\newcommand{\fecha}{TODO: Fecha de entrega}
+\newcommand{\grado}{TODO: Grado}
+\newcommand{\grupoInvestigacion}{TODO: Grupo de investigación}
+\newcommand{\departamento}{TODO: Departamento}
+\newcommand{\facultad}{Escuela Politécnica Superior}
+\newcommand{\universidad}{Universidad Autónoma de Madrid}
+\newcommand{\pieparizq}{TODO: Pie de página par}
+\newcommand{\pieparcen}{Trabajo de Fin de Grado}
+\newcommand{\logoizq}{Logo_EPS}
+\newcommand{\logoder}{Logo_UAM}
+\newcommand{\correo}{TODO: Correo de contacto}
+
+% Glosario y acrónimos
+\makeglossaries
+\input{src/glosario}
+
+% Inicio del documento
+\begin{document}
+
+% Elección del idioma (español)
+\selectlanguage{spanish}
+
+%
+% Portada
+%
+\pagenumbering{gobble}
+\include{portada}
+
+%
+% Página en blanco
+%
+\cleardoublepage
+
+%
+% Agradecimientos
+%
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\include{src/agradecimientos}  
+
+%
+% Resumen
+%
+\include{src/resumen}
+
+%
+% Glosario
+%
+\printglossary[title=Glosario,toctitle=Glosario]
+\printglossary[title=Acrónimos,toctitle=Acrónimos,type=\acronymtype]
+
+%
+% Tabla de contenidos
+%
+\tableofcontents
+\listoftables
+\listoffigures
+\cleardoublepage
+
+%
+% Introducción
+%
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\include{src/introduccion}
+%
+% Estado del arte
+%
+\include{src/estado_del_arte}
+
+%
+% Diseño
+%
+\include{src/disenho}
+
+%
+% Desarrollo
+%
+\include{src/desarrollo}
+
+%
+% Resultados
+%
+\include{src/resultados}
+
+%
+% Conclusiones
+%
+\include{src/conclusiones} 
+
+%
+% Página en blanco
+%
+\cleardoublepage
+
+%
+% Bibliografía
+%
+\bibliography{src/bibliografia}
+\addcontentsline{toc}{chapter}{Bibliografía}
+
+%
+% Apéndices
+%
+\appendix
+\cleardoublepage
+\addappheadtotoc
+\appendixpage
+
+%
+% TODO: Apéndices del TFG
+%
+\include{src/apendice_ejemplos}
+
+% Fin del documento
+\end{document}

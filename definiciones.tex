@@ -1,0 +1,132 @@
+% Clase del documento
+\documentclass[a4paper,12pt,twoside,openright,titlepage]{book}
+
+% Paquetes necesarios
+\usepackage{eurosym}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[hidelinks,colorlinks,citecolor=Fuchsia,urlcolor=blue,linkcolor=Cerulean]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{anysize}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage[cmex10]{amsmath}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{enumerate}
+\usepackage{fixltx2e}
+\usepackage{emptypage}
+\usepackage{float}
+\usepackage[pdftex]{graphicx}
+\usepackage{array}
+\usepackage{mdwmath}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{fixltx2e}
+\usepackage{pdfpages}
+\usepackage{quotchap}
+\usepackage{fancybox}
+\usepackage[acronym]{glossaries}
+\usepackage{appendix}
+\usepackage{bookmark}
+
+% Euro (€)
+\DeclareUnicodeCharacter{20AC}{\euro}
+
+% Estilo de la bibliografía
+\bibliographystyle{IEEEtran}
+
+% Inclusión de gráficos
+\graphicspath{{./graphics/}}
+
+% Extensiones de gráficos
+\DeclareGraphicsExtensions{.pdf,.jpeg,.jpg,.png}
+
+% Definiciones de colores (para hidelinks)
+\definecolor{LightCyan}{rgb}{0,0,0}
+\definecolor{Cerulean}{rgb}{0,0,0}
+\definecolor{Fuchsia}{rgb}{0,0,0}
+
+% Keywords (español e inglés)
+\def\keywordsEn{\vspace{.5em}
+{\textbf{\textit{Key words ---}}\,\relax%
+}}
+\def\endkeywordsEn{\par}
+
+\def\keywordsEs{\vspace{.5em}
+{\textbf{\textit{Palabras Clave ---}}\,\relax%
+}}
+\def\endkeywordsEs{\par}
+
+
+% Abstract (español e inglés)
+\def\abstractEs{\vspace{.5em}
+{\textbf{\textit{Resumen ---}}\,\relax%
+}}
+\def\endabstractEs{\par}
+
+\def\abstractEn{\vspace{.5em}
+{\textbf{\textit{Abstract ---}}\,\relax%
+}}
+\def\endabstractEn{\par}
+
+% Estilo páginas de capítulos
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[CO]{\footnotesize\emph{\nombretrabajo}}
+\fancyfoot[RO]{\thepage}
+\renewcommand{\footrulewidth}{.6pt}
+\renewcommand{\headrulewidth}{0.0pt}
+}
+
+% Estilo resto de páginas
+\pagestyle{fancy}
+
+% Estilo páginas impares
+\fancyfoot[CO]{\footnotesize\emph{\nombretrabajo}}
+\fancyfoot[RO]{\thepage}
+\rhead[]{\leftmark}
+
+% Estilo páginas pares
+\fancyfoot[CE]{\emph{\pieparcen}}
+\fancyfoot[LE]{\thepage}
+\fancyfoot[RE]{\pieparizq}
+\lhead[\leftmark]{}
+
+% Guía del pie de página
+\renewcommand{\footrulewidth}{.6pt}
+
+% Definiciones de funciones para los títulos
+\newlength\salto
+\setlength{\salto}{3.5ex plus 1ex minus .2ex}
+
+\newlength\resalto
+\setlength{\resalto}{2.3ex plus.2ex}
+
+% Corrección warning
+\setlength{\headheight}{15pt} 
+
+% Estilo de sección
+\newcommand{\lsection}[1]
+                {\section{#1}
+                \vskip-.9\resalto % Corrección del posible salto por defecto de \section
+                \hrule
+                \vskip+.9\salto} % Vuelvo ha realizar el salto
+
+% Estilo de los acrónimos
+\renewcommand{\acronymname}{Glosario}
+\renewcommand{\glossaryname}{Glosario}
+\pretolerance=2000
+\tolerance=3000
+
+% Pie de tabla
+\addto\captionsspanish{
+\def\tablename{Tabla}
+\def\listtablename{\'Indice de tablas}
+}
+
+% Traducir appendix/appendices
+\renewcommand\appendixtocname{Apéndices}
+\renewcommand\appendixpagename{Apéndices}

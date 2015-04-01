@@ -1,0 +1,105 @@
+%
+% Portada
+%
+
+% Universidad, Facultad
+\begin{titlepage}
+\selectlanguage{spanish}
+\begin{center}
+\textbf{\begin{huge}
+\universidad \\
+\end{huge}}
+\bigskip 
+\begin{LARGE}
+\facultad \\
+\end{LARGE}
+\end{center}
+
+\bigskip
+\bigskip
+
+%
+% Imágenes (logos) izquierdo y derecho
+%
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.55]{\logoizq}	
+		\includegraphics[scale=0.45]{\logoder}	
+	\end{center}	
+\end{figure}
+
+\bigskip
+\bigskip
+\bigskip
+
+% Grado
+\begin{center}
+\begin{large}
+\grado\\
+\end{large}
+\end{center}
+
+\bigskip
+
+\textbf{\begin{center}
+\begin{huge}
+Trabajo de Fin de Grado
+\end{huge}
+\end{center}}
+
+\bigskip
+\bigskip
+
+% Nombre del TFG
+\begin{center}
+\textbf{\begin{large}
+\nombretrabajo\\
+\end{large}}
+\end{center}
+
+% Nombre del autor
+\vspace{\fill}
+\begin{center}
+\textbf{\nombreautor}\\
+
+% Correo
+\href{\correo}{\textit{\correo}}\\
+\bigskip
+
+% Fecha
+\fecha\\
+\end{center}
+\end{titlepage}
+
+% Primera página
+\pagenumbering{Alph}
+\thispagestyle{empty}
+\par\vspace*{\fill}
+\begin{flushleft}
+\begin{scriptsize}
+\end{scriptsize}\end{flushleft}
+\newpage
+\thispagestyle{empty}
+\begin{center}
+
+% Nombre del trabajo
+\textbf{\begin{large}
+\nombretrabajo\\*
+\end{large}}
+\vspace*{0.2cm}
+\vspace{5cm}
+
+% Nombre del autor y del tutor
+\large Autor: \nombreautor \\*
+\large Tutor: \nombretutor \\
+\vspace{11cm}
+
+% Grupo de investigación, departamento, facultad, universidad y fecha
+\grupoInvestigacion \\
+\departamento \\
+\facultad \\
+\universidad \\
+\fecha \\
+
+\end{center}
+\normalsize
