@@ -48,7 +48,7 @@ Autores
 Este proyecto ha sido desarrollado por:
 - Rafael Leira Osuna ([@ralequi](https://github.com/ralequi))
 - Jose Fernando Zazo ([@jfzazo](https://github.com/jfzazo))
-- Mario Daniel Ruiz Noguera [@mariodruiz](https://github.com/mariodruiz)
+- Mario Daniel Ruiz Noguera ([@mariodruiz](https://github.com/mariodruiz))
 - Sid ([@JSidrach](https://github.com/JSidrach))
 
 Licencia
