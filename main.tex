@@ -59,6 +59,15 @@
 \listoffigures
 \cleardoublepage
 
+% Estilo de párrafo de los capítulos
+\setlength{\parskip}{0.75em}
+\renewcommand{\baselinestretch}{1.25}
+% Interlineado
+\spacing{1.3}
+% Numeración contenido
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
 %
 % Introducción
 %
@@ -100,6 +109,9 @@
 %
 \bibliography{src/bibliografia}
 \addcontentsline{toc}{chapter}{Bibliografía}
+
+% No expandir elementos para llenar toda la página
+\raggedbottom
 
 %
 % Apéndices
