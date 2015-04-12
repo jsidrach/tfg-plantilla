@@ -11,8 +11,6 @@
 \usepackage[utf8]{inputenc}
 % Caracteres del español
 \usepackage[spanish]{babel}
-% Enlaces
-\usepackage[hidelinks,colorlinks,citecolor=Fuchsia,urlcolor=black,linkcolor=Cerulean]{hyperref}
 % Código, algoritmos, etc.
 \usepackage{listings}
 % Definición de colores
@@ -23,14 +21,16 @@
 \usepackage{anysize}
 % Cabecera y pie de página
 \usepackage{fancyhdr}
+% Estilo título capítulos
+\usepackage{quotchap}
+% Algoritmos (expresarlos mejor)
+\usepackage{algorithmic}
 % Citas mejoradas
 \usepackage{cite}
 % Títulos de secciones
 \usepackage{titlesec}
 % Fórmulas matemáticas
 \usepackage[cmex10]{amsmath}
-% Algoritmos (expresarlos mejor)
-\usepackage{algorithmic}
 % Enumeraciones
 \usepackage{enumerate}
 % Páginas en blanco
@@ -49,10 +49,6 @@
 \usepackage{pdfpages}
 % Mejoras sobre las cajas
 \usepackage{fancybox}
-% Estilo título capítulos
-\usepackage{quotchap}
-% Glosario/Acrónimos
-\usepackage[acronym]{glossaries}
 % Apéndices
 \usepackage{appendix}
 % Marcadores (para el pdf)
@@ -61,6 +57,11 @@
 \usepackage{enumitem}
 % Espacio entre líneas y párrafos
 \usepackage{setspace}
+% Glosario/Acrónimos
+\usepackage[acronym]{glossaries}
+
+% Enlaces
+\hypersetup{hidelinks,pageanchor=false,colorlinks,citecolor=Fuchsia,urlcolor=black,linkcolor=Cerulean}
 
 % Euro (€)
 \DeclareUnicodeCharacter{20AC}{\euro}
