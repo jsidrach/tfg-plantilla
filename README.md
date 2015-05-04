@@ -3,7 +3,7 @@ Plantilla en *LaTeX* para el **Trabajo de Fin de Grado** (EPS-UAM). Contiene la 
 - Para completar y adaptar la plantilla, busca en el proyecto la palabra clave `TODO` y sobreescribe el nombre de tu trabajo, tutor, etc.
 - Para manejar la bibliografía se puede utilizar [JabRef](https://github.com/JabRef/jabref), editando [src/bibliografia.bib](src/bibliografia.bib)
 - En el archivo [apendice_ejemplos](src/apendice_ejemplos.tex) se encuentran algunos ejemplos útiles para la elaboración de la memoria
-- Un resumen de los comandos de *LaTeX* esta disponible en [LaTeX Command Summary](LaTeX Command Summary.pdf)
+- Un resumen de los comandos de *LaTeX* está disponible en [LaTeX Command Summary](LaTeX Command Summary.pdf)
 
 Instalación completa (dependencias)
 ----
