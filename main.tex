@@ -21,6 +21,9 @@
 \makeglossaries
 \input{src/glosario}
 
+% Rerefencias
+\bibliography{src/bibliografia}
+
 % Inicio del documento
 \begin{document}
 
@@ -72,8 +75,6 @@
 %
 % Introducción
 %
-\pagenumbering{arabic}
-\setcounter{page}{1}
 \include{src/introduccion}
 %
 % Estado del arte
@@ -108,7 +109,7 @@
 %
 % Bibliografía
 %
-\bibliography{src/bibliografia}
+\printbibliography
 \addcontentsline{toc}{chapter}{Bibliografía}
 
 % No expandir elementos para llenar toda la página

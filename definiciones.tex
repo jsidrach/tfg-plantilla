@@ -25,8 +25,6 @@
 \usepackage{quotchap}
 % Algoritmos (expresarlos mejor)
 \usepackage{algorithmic}
-% Citas mejoradas
-\usepackage{cite}
 % Títulos de secciones
 \usepackage{titlesec}
 % Fórmulas matemáticas
@@ -59,6 +57,10 @@
 \usepackage{setspace}
 % Glosario/Acrónimos
 \usepackage[acronym]{glossaries}
+% Fuentes
+\usepackage[T1]{fontenc}
+% Bibliografía
+\usepackage[sorting=none,natbib=true,backend=bibtex]{biblatex}
 
 % Enlaces
 \hypersetup{hidelinks,pageanchor=false,colorlinks,citecolor=Fuchsia,urlcolor=black,linkcolor=Cerulean}
@@ -66,11 +68,11 @@
 % Euro (€)
 \DeclareUnicodeCharacter{20AC}{\euro}
 
-% Estilo de la bibliografía
-\bibliographystyle{IEEEtran}
-
 % Inclusión de gráficos
 \graphicspath{{./graphics/}}
+
+% Texto referencias
+\addto{\captionsspanish}{\renewcommand{\bibname}{Referencias}}
 
 % Extensiones de gráficos
 \DeclareGraphicsExtensions{.pdf,.jpeg,.jpg,.png}
@@ -151,7 +153,7 @@
 \pretolerance=2000
 \tolerance=3000
 
-% Pie de tabla
+% Texto índice de tablas
 \addto\captionsspanish{
 \def\tablename{Tabla}
 \def\listtablename{\'Indice de tablas}
