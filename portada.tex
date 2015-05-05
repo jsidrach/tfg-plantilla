@@ -57,10 +57,16 @@ Trabajo de Fin de Grado
 \end{large}}
 \end{center}
 
-% Nombre del autor
+% Nombre del autor...
 \vspace{\fill}
 \begin{center}
 \textbf{\nombreautor}\\
+%t ...tutor...
+\textbf{Tutor: \nombretutor}\\
+% ... y ponente, si está definido en main.tex
+\ifcsname nombreponente\endcsname
+\textbf{Ponente: \nombreponente}\\
+\fi
 
 % Correo
 \href{mailto:\correo}{\textit{\correo}}\\
@@ -91,7 +97,10 @@ Trabajo de Fin de Grado
 
 % Nombre del autor y del tutor
 \large Autor: \nombreautor \\*
-\large Tutor: \nombretutor \\
+\large Tutor: \nombretutor \\*
+\ifcsname nombreponente\endcsname
+\large Ponente: \nombreponente\\
+\fi
 \vspace{11cm}
 
 % Grupo de investigación, departamento, facultad, universidad y fecha
