@@ -50,6 +50,7 @@ Este proyecto ha sido desarrollado por:
 - Jose Fernando Zazo ([@jfzazo](https://github.com/jfzazo))
 - Mario Daniel Ruiz Noguera ([@mariodruiz](https://github.com/mariodruiz))
 - Sid ([@JSidrach](https://github.com/JSidrach))
+- Pablo Molins ([@molins](https://github.com/molins))
 
 Licencia
 ----

@@ -23,8 +23,9 @@
 %
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[scale=0.35]{\logoizq}	
-		\includegraphics[scale=0.4]{\logoder}	
+		\includegraphics[scale=0.35]{\logoizq}
+    \hspace{1cm}
+		\includegraphics[scale=0.4]{\logoder}
 	\end{center}	
 \end{figure}
 
@@ -43,7 +44,7 @@
 
 \textbf{\begin{center}
 \begin{huge}
-TRABAJO FIN DE GRADO
+\MakeUppercase{Trabajo de Fin de Grado}
 \end{huge}
 \end{center}}
 
@@ -57,13 +58,13 @@ TRABAJO FIN DE GRADO
 \end{large}}
 \end{center}
 
-% Nombre del autor...
+% Nombre del autor
 \vspace{\fill}
 \begin{center}
 \textbf{\nombreautor}\\
-%t ...tutor...
+% Tutor
 \textbf{Tutor: \nombretutor}\\
-% ... y ponente, si está definido en main.tex
+% Ponente, si está definido en main.tex
 \ifcsname nombreponente\endcsname
 \textbf{Ponente: \nombreponente}\\
 \fi
@@ -88,7 +89,7 @@ TRABAJO FIN DE GRADO
 
 % Nombre del trabajo
 \textbf{\begin{large}
-\nombretrabajo\\*
+\MakeUppercase{\nombretrabajo}\\*
 \end{large}}
 \vspace*{0.2cm}
 \vspace{5cm}
@@ -99,14 +100,20 @@ TRABAJO FIN DE GRADO
 \ifcsname nombreponente\endcsname
 \large Ponente: \nombreponente\\
 \fi
-\vspace{11cm}
+
+\vfill
 
 % Grupo de investigación, departamento, facultad, universidad y fecha
+\ifcsname nombreponente\endcsname
 \grupoInvestigacion \\
+\fi
 \departamento \\
 \facultad \\
 \universidad \\
-\fecha \\
+\vspace{1cm}
+\MakeUppercase{\fecha} \\
+
+\clearpage
 
 \end{center}
 \normalsize
