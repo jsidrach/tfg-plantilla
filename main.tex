@@ -40,6 +40,12 @@
 \include{portada}
 \hypersetup{pageanchor=true}
 
+% Estilo de párrafo de los capítulos
+\setlength{\parskip}{0.75em}
+\renewcommand{\baselinestretch}{1.25}
+% Interlineado simple
+\spacing{1}
+
 %
 % Agradecimientos
 %
@@ -58,6 +64,10 @@
 \printglossary[title=Glosario,toctitle=Glosario]
 \printglossary[title=Acrónimos,toctitle=Acrónimos,type=\acronymtype]
 
+% Estilo de párrafo de los índices
+\setlength{\parskip}{1pt}
+\renewcommand{\baselinestretch}{1}
+
 %
 % Tabla de contenidos
 %
@@ -69,8 +79,8 @@
 % Estilo de párrafo de los capítulos
 \setlength{\parskip}{0.75em}
 \renewcommand{\baselinestretch}{1.25}
-% Interlineado
-\spacing{1.3}
+% Interlineado simple
+\spacing{1}
 % Numeración contenido
 \pagenumbering{arabic}
 \setcounter{page}{1}
