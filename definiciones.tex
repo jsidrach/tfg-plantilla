@@ -60,10 +60,12 @@
 % Fuentes
 \usepackage[T1]{fontenc}
 % Bibliografía
-\usepackage[sorting=none,natbib=true,backend=bibtex]{biblatex}
+\usepackage[sorting=none,natbib=true,backend=bibtex,bibencoding=ascii]{biblatex}
+% Fix biblatex+babel warning
+\usepackage{csquotes}
 
 % Enlaces
-\hypersetup{hidelinks,pageanchor=false,colorlinks,citecolor=Fuchsia,urlcolor=black,linkcolor=Cerulean}
+\hypersetup{hidelinks,pageanchor=true,colorlinks,citecolor=Fuchsia,urlcolor=black,linkcolor=Cerulean}
 
 % Euro (€)
 \DeclareUnicodeCharacter{20AC}{\euro}
