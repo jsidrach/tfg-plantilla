@@ -1,4 +1,4 @@
-Plantilla en *LaTeX* para el **Trabajo de Fin de Grado** (EPS-UAM). Contiene la estructura básica para la memoria del mismo, siguiendo la [normativa del curso 2014-2015](2014-2015/).
+Plantilla en *LaTeX* para el **Trabajo de Fin de Grado** (EPS-UAM). Contiene la estructura básica para la memoria del mismo, siguiendo la [normativa del curso 2015-2016](2015-2016/).
 
 - Para completar y adaptar la plantilla, busca en el proyecto la palabra clave `TODO` y sobreescribe el nombre de tu trabajo, tutor, etc.
 - Para manejar la bibliografía se puede utilizar [JabRef](https://github.com/JabRef/jabref), editando [src/bibliografia.bib](src/bibliografia.bib)
